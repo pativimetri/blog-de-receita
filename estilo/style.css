@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'SweetCandy';
+    src: url(/fonts/SweetCandy.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body, html{
-    background-color: bisque;
+    background-color: #FAF9EE;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -14,16 +20,53 @@ header{
 }
 
 header h1 {
-    font-family: ;
+    font-family: 'SweetCandy';
+    font-size: 4em;
+    color: #919c8b;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+menu{
+    margin: 10px;
+    padding-bottom: 10px;
+}
+menu li{
+    display: inline;
+    border-radius: 8px;
+    color: #97a591;
+    font-weight: bold;
+    background-color: #d1dcc070;
+    padding: 10px;
 }
 
 main {
-    background-color: aliceblue;
     margin: auto;
     display: block;
-    width: 90vw;
+    width: 70vw;
+}
+
+main h1{
+    color: #919c8b;
 }
 
 article li{
     list-style-type: none;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+article h2, h3, li{
+    padding: 10px;
+}
+
+article h3 {
+    color: #b9c5b3;
+    margin-top: 10px;
 }
