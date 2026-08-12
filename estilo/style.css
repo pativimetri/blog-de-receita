@@ -2,20 +2,22 @@
 
 @font-face {
     font-family: 'SweetCandy';
-    src: url(/fonts/SweetCandy.ttf);
+    src: url('../fonts/SweetCandy.ttf') format('truetype');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
     background-color: #FAF9EE;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     text-align: center;
 }
 
@@ -27,18 +29,49 @@ header h1 {
     margin-top: 20px;
 }
 
-menu{
+/* MENU */
+
+menu {
     margin: 10px;
     padding-bottom: 10px;
 }
-menu li{
-    display: inline;
+
+menu ul {
+    padding: 0;
+}
+
+menu li {
+    display: inline-block;
     border-radius: 8px;
-    color: #97a591;
     font-weight: bold;
     background-color: #d1dcc070;
     padding: 10px;
+    margin: 3px;
+     color: #97a591;
 }
+
+menu li a {
+    text-decoration: none;
+    color: #97a591;
+}
+
+menu li a:link {
+    color: #97a591;
+}
+
+menu li a:visited {
+    color: #97a591;
+}
+
+menu li a:hover {
+    color: #6f806b;
+}
+
+menu li a:active {
+    color: #97a591;
+}
+
+/* CONTEÚDO PRINCIPAL */
 
 main {
     margin: auto;
@@ -46,13 +79,11 @@ main {
     width: 70vw;
 }
 
-main h1{
+main h1 {
     color: #919c8b;
 }
 
-article li{
-    list-style-type: none;
-}
+/* RECEITAS */
 
 article {
     background-color: white;
@@ -62,11 +93,22 @@ article {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-article h2, h3, li{
-    padding: 10px;
+article h1 {
+    border-bottom: 1px solid #274b171c;
+    padding-bottom: 10px;
 }
 
 article h3 {
     color: #b9c5b3;
     margin-top: 10px;
+}
+
+article h2,
+article h3,
+article li {
+    padding: 10px;
+}
+
+article li {
+    list-style-type: none;
 }
