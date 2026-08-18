@@ -15,7 +15,14 @@ body,
 html {
     background-color: #FAF9EE;
     font-family: Arial, Helvetica, sans-serif;
+      height: 100%;
+  margin: 0;
 
+}
+
+body{
+      display: grid;
+  grid-template-rows: auto 1fr auto; 
 }
 
 header {
@@ -24,7 +31,9 @@ header {
 
 header h1 {
     font-family: 'SweetCandy';
-    font-size: 3.7em;
+    font-size: 5em;
+    width: 95%;
+    text-align: center;
     color: #919c8b;
     font-weight: normal;
     padding-top: 50px;
@@ -36,9 +45,8 @@ header h1 {
 
 menu {
     display: none;
-    margin: 10px;
+    margin: 20px;
     padding-bottom: 10px;
-    width: 94%;
     cursor: pointer;
 
 }
@@ -79,6 +87,7 @@ menu li a:active {
 }
 
 .material-symbols-outlined{
+    margin-top: 20px;
     display: block;
     color: #6f806b; 
   }
@@ -124,7 +133,7 @@ article li {
 
 article li {
     list-style-type: none;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 footer{
