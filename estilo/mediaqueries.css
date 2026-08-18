@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 70vw;
+    }
+
+    header h1 {
+        padding-bottom: 12px;
+    }
+
+
+    menu {
+        display: block;
+    }
+    menu li{
+        display: inline;
+    }
+    .material-symbols-outlined{
+        display: none;
+    }
+
+}
